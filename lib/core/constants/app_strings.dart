@@ -12,4 +12,7 @@ class AppStrings {
   static const confirm = 'تأكيد';
   static const noDataSelected = 'لا توجد بيانات محددة';
   static const selectAll = 'إختيار الكل';
+  static const selectPages = 'إختيار الصفحات';
+  static const fromPage = 'من صفحة';
+  static const toPage = 'إلى صفحة';
 }

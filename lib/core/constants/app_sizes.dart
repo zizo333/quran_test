@@ -27,7 +27,7 @@ class AppSizes {
   static double hTFPadding = 16;
   static EdgeInsetsGeometry tFcontentPadding = EdgeInsets.symmetric(
     horizontal: hTFPadding.w,
-    vertical: getValueForScreenType(medium: 8, semiLarge: 14).h,
+    vertical: getValueForScreenType(medium: 0, semiLarge: 14).h,
   );
 
   //*** Button Sizes */

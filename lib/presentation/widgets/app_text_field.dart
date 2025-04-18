@@ -43,6 +43,7 @@ class AppTextField extends StatelessWidget {
     this.maxLength,
     this.showCounter = false,
     this.inputFormatters,
+    this.textAlign = TextAlign.start,
   });
 
   final TextEditingController? controller;
@@ -79,6 +80,7 @@ class AppTextField extends StatelessWidget {
   final int? maxLength;
   final bool showCounter;
   final List<TextInputFormatter>? inputFormatters;
+  final TextAlign textAlign;
 
   @override
   Widget build(BuildContext context) {
@@ -99,11 +101,12 @@ class AppTextField extends StatelessWidget {
       readOnly: readOnly,
       expands: expands,
       maxLength: maxLength,
+      onTap: onTap,
+      textAlign: textAlign,
       validator: validator,
       onChanged: onChanged,
       onFieldSubmitted:
           onSubmitted ?? (_) => FocusScope.of(context).requestFocus(nextNode),
-      onTap: onTap,
       decoration: InputDecoration(
         labelText: labelText,
         labelStyle: AppStyles.tFLabelStyle,

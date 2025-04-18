@@ -13,20 +13,19 @@ class AppStyles {
 
   //*** TextField Styles */
   static TextStyle tFStyle = AppTextStyle(
-    color: AppColors.c333333,
-    fontSize: getValueForScreenType(medium: 12, semiLarge: 10).sp,
+    fontSize: getValueForScreenType(medium: 13, semiLarge: 10).sp,
   );
   static TextStyle tFHintStyle = AppTextStyle(
     color: AppColors.cC1C1C1,
-    fontSize: getValueForScreenType(medium: 12, semiLarge: 10).sp,
+    fontSize: getValueForScreenType(medium: 13, semiLarge: 10).sp,
   );
   static TextStyle tFLabelStyle = AppTextStyle(
     color: AppColors.cC1C1C1,
-    fontSize: getValueForScreenType(medium: 12, semiLarge: 10).sp,
+    fontSize: getValueForScreenType(medium: 13, semiLarge: 10).sp,
   );
   static TextStyle tFFloatingLabelStyle = AppTextStyle(
     color: AppColors.c333333,
-    fontSize: getValueForScreenType(medium: 12, semiLarge: 10).sp,
+    fontSize: getValueForScreenType(medium: 13, semiLarge: 10).sp,
   );
   static TextStyle tFerrorStyle = AppTextStyle(
     color: navigatorKey.currentContext?.colorScheme.error ?? AppColors.red,
@@ -42,7 +41,7 @@ class AppStyles {
       borderRadius:
           borderRadius ?? BorderRadius.circular(radius ?? AppSizes.radius.r),
       borderSide: BorderSide(
-        color: borderColor ?? AppColors.fieldBorder,
+        color: borderColor ?? AppColors.cC1C1C1,
         width: AppSizes.border.r,
       ),
     );
